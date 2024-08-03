@@ -169,7 +169,7 @@ The Arabic OCR GUI Application is a sophisticated tool designed for Optical Char
 ## Proposed Customized Model
 
 ### Used Dataset
-- **Dataset**: [Link to Dataset](https://www.kaggle.com/datasets/salehmahmoud/all-char-4k-samples-code-model/data)
+- **Dataset**: [Link to Dataset](https://www.kaggle.com/datasets/salehmahmoud/all-char-samples)
 - **Distribution Image**:
   ![Dataset Distribution](./Figures/Distribution%20Image.png)
 
