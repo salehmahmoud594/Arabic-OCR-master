@@ -251,7 +251,7 @@ arabic-ocr-gui/
 │   └── ....
 ├── chars/
 │   └── ....
-├── models/
+└──  models/
 │   ├── 1L_NN.sav
 │   ├── 2L_NN.sav
 │   ├── all-char-4k-samples-code-model.json (Our Customized Enhanced Model)
@@ -264,9 +264,7 @@ arabic-ocr-gui/
 │   ├── Gaussian_Naive_Bayes.sav
 │   ├── LinearSVM.sav
 │   └── model1.weights.h5 (Our Customized Enhanced Model)
-└── docs/
-    ├── API.md
-    └── CONTRIBUTING.md
+
 ```
 
 ### Coding Standards
@@ -313,9 +311,9 @@ For major changes, please open an issue first to discuss the proposed changes.
 - NTI Post Graduate Diploma 2023/2024 faculty and staff
   - AI project supervised by Dr. Ghazal Abdelaty Fahmy
   - Team:
-     - Eng. Saleh Mahmoud
+     - [Eng. Saleh Mahmoud](https://github.com/salehmahmoud594/)
      - Eng. Mohamed Samy
-     - Eng. Ahmed El Shawadfy
+     - [Eng. Ahmed El Shawadfy](https://github.com/ahmedelshawadfy)
      - Eng. Asmaa Mohamed
      - Eng. Assem Ibrahim
      - Eng. Omar Mohamed
