@@ -64,7 +64,7 @@ The Arabic OCR GUI Application is a sophisticated tool designed for Optical Char
 1. Clone the repository:
    ```bash
    git clone https://github.com/salehmahmoud594/Arabic-OCR-master.git
-   cd arabic-ocr-gui
+   cd Arabic-OCR-master
    ```
 
 2. Set up a virtual environment:
