@@ -1,0 +1,756 @@
+\Arabic-OCR-master\
+│   .gitignore
+│   An_Efficient_Font_Independent_Word_and_Character_S.pdf
+│   issues.txt
+│   LICENSE
+│   README.md
+│   requirements.txt
+│   tree.txt
+│   
+├───.github
+│   └───workflows
+│           artifacts-cleanup.yml
+│           
+├───Dataset
+│       char_4K_sample.rar
+│       
+├───Figures
+│       char1.png
+│       char2.png
+│       char3.png
+│       char4.png
+│       line.png
+│       pipeline.PNG
+│       test.png
+│       word.png
+│       
+└───src
+    │   character_segmentation.py
+    │   chars.zip
+    │   dataset.py
+    │   edit.py
+    │   feature_extraction.py
+    │   lin1.png
+    │   Main.py
+    │   MainMod.py
+    │   OCR.py
+    │   preprocessing.py
+    │   resizable_img.py
+    │   segmentation.py
+    │   spin.py
+    │   train.py
+    │   Try.py
+    │   utilities.py
+    │   
+    ├───bakTest
+    │       CamScanner 07-26-2024 23.05_1.jpg
+    │       CamScanner 07-26-2024 23.05_2.jpg
+    │       capr12 - Copy.png
+    │       capr12.png
+    │       capr12Font.png
+    │       capr14 - Copy.jpg
+    │       capr14.jpg
+    │       hand.png
+    │       hand1.jpg
+    │       line1.png
+    │       line2FontExact.png
+    │       mio.png
+    │       mioAll.png
+    │       
+    ├───chars
+    ├───icons
+    │       language.png
+    │       logo.png
+    │       
+    ├───lines
+    ├───models
+    │   │   1L_NN.sav
+    │   │   2L_NN.sav
+    │   │   all-char-4k-samples-code-model.json
+    │   │   all-char-4k-samples-code-model.weights.h5
+    │   │   char-4k-samples-code-model.json
+    │   │   char-4k-samples-code-model.weights.h5
+    │   │   Enhanced_CNN_Compressed_Dataset.weights_50_Run.weights.h5
+    │   │   Enhanced_CNN_Compressed_Dataset_100_Run.sav
+    │   │   Enhanced_CNN_Compressed_Dataset_50_Run.sav
+    │   │   Gaussian_Naive_Bayes.sav
+    │   │   LinearSVM.sav
+    │   │   model1.weights.h5
+    │   │   report.txt
+    │   │   
+    │   └───bak
+    ├───mytest
+    │       arial-line1.png
+    │       arial.png
+    │       calibri-issue.png
+    │       calibri1.png
+    │       calibri2-line1.png
+    │       calibri2.png
+    │       courier_new.png
+    │       courier_new_line1.png
+    │       DubaiMedium-.png
+    │       DubaiMedium-line1.png
+    │       DubaiMedium.png
+    │       hand2_issue.jpeg
+    │       hand3_issue.bmp
+    │       hand3_issue.jpeg
+    │       hand3_issue.jpg
+    │       hand3_issue.png
+    │       hand4_issue.jpeg
+    │       hand_writeing_issue.jpeg
+    │       microsoft_sans_serif.png
+    │       microsoft_sans_serif_line1.png
+    │       segoe_UI.png
+    │       segoe_UI_line1.png
+    │       tahoma-line1.png
+    │       tahoma.png
+    │       times_new_roman.png
+    │       times_new_roman_line1.png
+    │       
+    ├───output
+    │   │   running_time.txt
+    │   │   
+    │   └───text
+    │           allLetters.txt
+    │           arial.txt
+    │           Arial_ms.txt
+    │           Bsm.txt
+    │           Bsm10.txt
+    │           Bsm11.txt
+    │           Bsm12.txt
+    │           Bsm13.txt
+    │           Bsm14.txt
+    │           Bsm15.txt
+    │           Bsm16.txt
+    │           Bsm17.txt
+    │           Bsm18.txt
+    │           Bsm19.txt
+    │           Bsm2.txt
+    │           Bsm20.txt
+    │           Bsm21.txt
+    │           Bsm3.txt
+    │           Bsm4.txt
+    │           Bsm5.txt
+    │           Bsm6.txt
+    │           Bsm7.txt
+    │           Bsm8.txt
+    │           Bsm9.txt
+    │           calibri-issue.txt
+    │           calibri1.txt
+    │           CamScanner 07-26-2024 23.txt
+    │           capr12 - Copy.txt
+    │           capr12.txt
+    │           capr12Font.txt
+    │           courier_new.txt
+    │           don1.txt
+    │           don19.txt
+    │           dubai.txt
+    │           DubaiMedium-line1.txt
+    │           haand.txt
+    │           hand.txt
+    │           hand1.txt
+    │           hand3_issue.txt
+    │           letters.txt
+    │           letters1.txt
+    │           letters2.txt
+    │           letters3.txt
+    │           letters4.txt
+    │           lin2.txt
+    │           line1.txt
+    │           line22.txt
+    │           line2FontExact.txt
+    │           linFont.txt
+    │           mio.txt
+    │           mioAll.txt
+    │           segoe_UI_line1.txt
+    │           tahoma-line1.txt
+    │           tes.txt
+    │           times_new_roman_line1.txt
+    │           try1.txt
+    │           WhatsApp Image 2024-07-29 at 05.txt
+    │           
+    ├───proTest
+    │       Arial_ms.png
+    │       capr12.png
+    │       don1.png
+    │       don19.png
+    │       don2.png
+    │       don21.png
+    │       letters4.png
+    │       line1.png
+    │       line2FontExact.png
+    │       
+    ├───res1
+    │       char0.png
+    │       char1.png
+    │       char10.png
+    │       char100.png
+    │       char101.png
+    │       char102.png
+    │       char103.png
+    │       char104.png
+    │       char105.png
+    │       char106.png
+    │       char107.png
+    │       char108.png
+    │       char109.png
+    │       char11.png
+    │       char110.png
+    │       char111.png
+    │       char112.png
+    │       char113.png
+    │       char114.png
+    │       char115.png
+    │       char116.png
+    │       char117.png
+    │       char118.png
+    │       char119.png
+    │       char12.png
+    │       char120.png
+    │       char121.png
+    │       char122.png
+    │       char123.png
+    │       char124.png
+    │       char125.png
+    │       char126.png
+    │       char127.png
+    │       char128.png
+    │       char129.png
+    │       char13.png
+    │       char130.png
+    │       char131.png
+    │       char132.png
+    │       char133.png
+    │       char134.png
+    │       char135.png
+    │       char136.png
+    │       char137.png
+    │       char138.png
+    │       char139.png
+    │       char14.png
+    │       char140.png
+    │       char141.png
+    │       char142.png
+    │       char143.png
+    │       char144.png
+    │       char145.png
+    │       char146.png
+    │       char147.png
+    │       char148.png
+    │       char149.png
+    │       char15.png
+    │       char150.png
+    │       char151.png
+    │       char152.png
+    │       char153.png
+    │       char154.png
+    │       char155.png
+    │       char156.png
+    │       char157.png
+    │       char158.png
+    │       char159.png
+    │       char16.png
+    │       char160.png
+    │       char161.png
+    │       char162.png
+    │       char163.png
+    │       char164.png
+    │       char165.png
+    │       char166.png
+    │       char167.png
+    │       char168.png
+    │       char169.png
+    │       char17.png
+    │       char170.png
+    │       char171.png
+    │       char172.png
+    │       char173.png
+    │       char174.png
+    │       char175.png
+    │       char176.png
+    │       char177.png
+    │       char178.png
+    │       char179.png
+    │       char18.png
+    │       char180.png
+    │       char181.png
+    │       char182.png
+    │       char183.png
+    │       char184.png
+    │       char185.png
+    │       char186.png
+    │       char187.png
+    │       char188.png
+    │       char189.png
+    │       char19.png
+    │       char190.png
+    │       char191.png
+    │       char192.png
+    │       char193.png
+    │       char194.png
+    │       char195.png
+    │       char196.png
+    │       char197.png
+    │       char198.png
+    │       char199.png
+    │       char2.png
+    │       char20.png
+    │       char200.png
+    │       char201.png
+    │       char202.png
+    │       char203.png
+    │       char204.png
+    │       char205.png
+    │       char206.png
+    │       char207.png
+    │       char208.png
+    │       char209.png
+    │       char21.png
+    │       char210.png
+    │       char211.png
+    │       char212.png
+    │       char213.png
+    │       char214.png
+    │       char215.png
+    │       char216.png
+    │       char217.png
+    │       char218.png
+    │       char219.png
+    │       char22.png
+    │       char220.png
+    │       char221.png
+    │       char222.png
+    │       char223.png
+    │       char224.png
+    │       char225.png
+    │       char226.png
+    │       char227.png
+    │       char228.png
+    │       char229.png
+    │       char23.png
+    │       char230.png
+    │       char231.png
+    │       char232.png
+    │       char233.png
+    │       char234.png
+    │       char235.png
+    │       char236.png
+    │       char237.png
+    │       char238.png
+    │       char239.png
+    │       char24.png
+    │       char240.png
+    │       char241.png
+    │       char242.png
+    │       char243.png
+    │       char244.png
+    │       char245.png
+    │       char246.png
+    │       char247.png
+    │       char248.png
+    │       char249.png
+    │       char25.png
+    │       char250.png
+    │       char251.png
+    │       char252.png
+    │       char253.png
+    │       char254.png
+    │       char255.png
+    │       char256.png
+    │       char257.png
+    │       char258.png
+    │       char259.png
+    │       char26.png
+    │       char260.png
+    │       char261.png
+    │       char262.png
+    │       char263.png
+    │       char264.png
+    │       char265.png
+    │       char266.png
+    │       char267.png
+    │       char268.png
+    │       char27.png
+    │       char28.png
+    │       char29.png
+    │       char3.png
+    │       char30.png
+    │       char31.png
+    │       char32.png
+    │       char33.png
+    │       char34.png
+    │       char35.png
+    │       char36.png
+    │       char37.png
+    │       char38.png
+    │       char39.png
+    │       char4.png
+    │       char40.png
+    │       char41.png
+    │       char42.png
+    │       char43.png
+    │       char44.png
+    │       char45.png
+    │       char46.png
+    │       char47.png
+    │       char48.png
+    │       char49.png
+    │       char5.png
+    │       char50.png
+    │       char51.png
+    │       char52.png
+    │       char53.png
+    │       char54.png
+    │       char55.png
+    │       char56.png
+    │       char57.png
+    │       char58.png
+    │       char59.png
+    │       char6.png
+    │       char60.png
+    │       char61.png
+    │       char62.png
+    │       char63.png
+    │       char64.png
+    │       char65.png
+    │       char66.png
+    │       char67.png
+    │       char68.png
+    │       char69.png
+    │       char7.png
+    │       char70.png
+    │       char71.png
+    │       char72.png
+    │       char73.png
+    │       char74.png
+    │       char75.png
+    │       char76.png
+    │       char77.png
+    │       char78.png
+    │       char79.png
+    │       char8.png
+    │       char80.png
+    │       char81.png
+    │       char82.png
+    │       char83.png
+    │       char84.png
+    │       char85.png
+    │       char86.png
+    │       char87.png
+    │       char88.png
+    │       char89.png
+    │       char9.png
+    │       char90.png
+    │       char91.png
+    │       char92.png
+    │       char93.png
+    │       char94.png
+    │       char95.png
+    │       char96.png
+    │       char97.png
+    │       char98.png
+    │       char99.png
+    │       line0.png
+    │       line1.png
+    │       line2.png
+    │       line3.png
+    │       line4.png
+    │       mio.png
+    │       word0.png
+    │       word1.png
+    │       word10.png
+    │       word11.png
+    │       word12.png
+    │       word13.png
+    │       word14.png
+    │       word15.png
+    │       word16.png
+    │       word17.png
+    │       word18.png
+    │       word19.png
+    │       word2.png
+    │       word20.png
+    │       word21.png
+    │       word22.png
+    │       word23.png
+    │       word24.png
+    │       word25.png
+    │       word26.png
+    │       word27.png
+    │       word28.png
+    │       word29.png
+    │       word3.png
+    │       word30.png
+    │       word31.png
+    │       word32.png
+    │       word33.png
+    │       word34.png
+    │       word35.png
+    │       word36.png
+    │       word37.png
+    │       word38.png
+    │       word39.png
+    │       word4.png
+    │       word40.png
+    │       word41.png
+    │       word42.png
+    │       word43.png
+    │       word44.png
+    │       word45.png
+    │       word46.png
+    │       word47.png
+    │       word48.png
+    │       word49.png
+    │       word5.png
+    │       word50.png
+    │       word51.png
+    │       word52.png
+    │       word53.png
+    │       word54.png
+    │       word55.png
+    │       word56.png
+    │       word57.png
+    │       word58.png
+    │       word59.png
+    │       word6.png
+    │       word60.png
+    │       word61.png
+    │       word62.png
+    │       word63.png
+    │       word64.png
+    │       word65.png
+    │       word66.png
+    │       word67.png
+    │       word68.png
+    │       word69.png
+    │       word7.png
+    │       word70.png
+    │       word71.png
+    │       word72.png
+    │       word73.png
+    │       word74.png
+    │       word75.png
+    │       word76.png
+    │       word77.png
+    │       word78.png
+    │       word79.png
+    │       word8.png
+    │       word80.png
+    │       word81.png
+    │       word82.png
+    │       word83.png
+    │       word84.png
+    │       word85.png
+    │       word86.png
+    │       word9.png
+    │       
+    ├───resLineExact
+    │       char0.png
+    │       char1.png
+    │       char10.png
+    │       char11.png
+    │       char12.png
+    │       char13.png
+    │       char14.png
+    │       char15.png
+    │       char16.png
+    │       char17.png
+    │       char18.png
+    │       char19.png
+    │       char2.png
+    │       char20.png
+    │       char21.png
+    │       char22.png
+    │       char23.png
+    │       char24.png
+    │       char25.png
+    │       char26.png
+    │       char27.png
+    │       char28.png
+    │       char29.png
+    │       char3.png
+    │       char30.png
+    │       char31.png
+    │       char32.png
+    │       char33.png
+    │       char34.png
+    │       char35.png
+    │       char36.png
+    │       char37.png
+    │       char38.png
+    │       char39.png
+    │       char4.png
+    │       char40.png
+    │       char41.png
+    │       char42.png
+    │       char43.png
+    │       char44.png
+    │       char45.png
+    │       char46.png
+    │       char47.png
+    │       char48.png
+    │       char49.png
+    │       char5.png
+    │       char50.png
+    │       char51.png
+    │       char52.png
+    │       char53.png
+    │       char54.png
+    │       char55.png
+    │       char56.png
+    │       char57.png
+    │       char58.png
+    │       char59.png
+    │       char6.png
+    │       char60.png
+    │       char61.png
+    │       char62.png
+    │       char63.png
+    │       char64.png
+    │       char65.png
+    │       char66.png
+    │       char67.png
+    │       char68.png
+    │       char69.png
+    │       char7.png
+    │       char70.png
+    │       char71.png
+    │       char72.png
+    │       char73.png
+    │       char74.png
+    │       char75.png
+    │       char8.png
+    │       char9.png
+    │       line0.png
+    │       line1.txt
+    │       word0.png
+    │       word1.png
+    │       word10.png
+    │       word11.png
+    │       word12.png
+    │       word13.png
+    │       word14.png
+    │       word15.png
+    │       word16.png
+    │       word17.png
+    │       word2.png
+    │       word3.png
+    │       word4.png
+    │       word5.png
+    │       word6.png
+    │       word7.png
+    │       word8.png
+    │       word9.png
+    │       
+    ├───resLinFont
+    │       char0.png
+    │       char1.png
+    │       char10.png
+    │       char11.png
+    │       char12.png
+    │       char13.png
+    │       char14.png
+    │       char15.png
+    │       char16.png
+    │       char17.png
+    │       char18.png
+    │       char19.png
+    │       char2.png
+    │       char20.png
+    │       char21.png
+    │       char22.png
+    │       char23.png
+    │       char24.png
+    │       char25.png
+    │       char26.png
+    │       char27.png
+    │       char28.png
+    │       char29.png
+    │       char3.png
+    │       char30.png
+    │       char31.png
+    │       char32.png
+    │       char33.png
+    │       char34.png
+    │       char35.png
+    │       char36.png
+    │       char37.png
+    │       char38.png
+    │       char39.png
+    │       char4.png
+    │       char40.png
+    │       char41.png
+    │       char42.png
+    │       char43.png
+    │       char44.png
+    │       char45.png
+    │       char46.png
+    │       char47.png
+    │       char48.png
+    │       char49.png
+    │       char5.png
+    │       char50.png
+    │       char51.png
+    │       char52.png
+    │       char53.png
+    │       char54.png
+    │       char55.png
+    │       char56.png
+    │       char57.png
+    │       char58.png
+    │       char59.png
+    │       char6.png
+    │       char60.png
+    │       char61.png
+    │       char62.png
+    │       char63.png
+    │       char64.png
+    │       char65.png
+    │       char7.png
+    │       char8.png
+    │       char9.png
+    │       line0.png
+    │       linFont.txt
+    │       word0.png
+    │       word1.png
+    │       word10.png
+    │       word11.png
+    │       word12.png
+    │       word13.png
+    │       word14.png
+    │       word15.png
+    │       word16.png
+    │       word17.png
+    │       word18.png
+    │       word19.png
+    │       word2.png
+    │       word20.png
+    │       word21.png
+    │       word22.png
+    │       word3.png
+    │       word4.png
+    │       word5.png
+    │       word6.png
+    │       word7.png
+    │       word8.png
+    │       word9.png
+    │       
+    ├───test
+    │       capr12.png
+    │       
+    ├───truth
+    │       capr12.txt
+    │       capr14.txt
+    │       
+    ├───words
+    └───__pycache__
+            character_segmentation.cpython-312.pyc
+            loadingspinner.cpython-312.pyc
+            OCR.cpython-312.pyc
+            preprocessing.cpython-312.pyc
+            segmentation.cpython-312.pyc
+            spin.cpython-312.pyc
+            spinner.cpython-312.pyc
+            train.cpython-312.pyc
+            utilities.cpython-312.pyc
+            

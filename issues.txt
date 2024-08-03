@@ -1,0 +1,69 @@
+pip is not recognized
+python -m ensurepip
+
+https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe
+ModuleNotFoundError: No module named 'distutils'
+pip install setuptools
+
+
+ python.exe -m pip install --upgrade pip
+
+python3 -m pip install setuptools
+
+pip install ttkbootstrap
+
+
+Trying to unpickle estimator LabelBinarizer from version 0.22 when using version 1.4.2
+
+pip uninstall scikit-learn
+pip install scikit-learn==1.4.2
+
+pip install scikit-learn==0.22
+
+
+pip install tkthread
+pip install tcl
+
+pip install --upgrade pip setuptools wheel
+python setup.py clean --all
+
+The conflict is caused by:
+    pyqt6-tools 6.4.2.3.3 depends on pyqt6-plugins<6.4.2.3 and >=6.4.2.2.2
+    pyqt6-tools 6.3.1.3.3 depends on pyqt6-plugins<6.3.1.3 and >=6.3.1.2.2
+    pyqt6-tools 6.1.0.3.2 depends on pyqt6==6.1.0
+    pyqt6-tools 6.0.3.3.2 depends on pyqt6==6.0.3
+    pyqt6-tools 6.0.2.3.2 depends on pyqt6==6.0.2
+    pyqt6-tools 6.0.1.3.2 depends on pyqt6==6.0.1
+
+
+
+
+python -m pip install pyqt6==6.1.0
+python -m pip install pyqt6-tools
+
+
+import joblib 
+
+# save model with joblib 
+filename = 'joblib_model.sav'
+joblib.dump(model, filename)
+
+
+40 class
+https://www.kaggle.com/code/salehmahmoud/compressed-dataset
+
+115 class
+https://www.kaggle.com/code/salehmahmoud/dataset-115 
+
+
+# Updated by : NTi Post Graduate Diploma 2023/2024
+            save_image(char_img, 'chars', f'char{count}')
+            count +=1
+
+
+# Updated by : NTi Post Graduate Diploma 2023/2024
+    countChar = 0
+    print('CharCount.all_char_imgs: end ', f'{len(CharCount.all_char_imgs)}')
+    for char_img in CharCount.all_char_imgs:
+        save_image(char_img, 'chars', f'char{countChar}')
+        countChar +=1
